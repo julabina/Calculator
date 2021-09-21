@@ -26,43 +26,93 @@ const divide = () => {
 };
 
 btns[0].addEventListener("click", () => {
-  resultContainer.textContent += 0;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 0;
+  } else {
+    resultContainer.textContent += 0;
+  }
 });
 
 btns[1].addEventListener("click", () => {
-  resultContainer.textContent += 1;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 1;
+  } else {
+    resultContainer.textContent += 1;
+  }
 });
 
 btns[2].addEventListener("click", () => {
-  resultContainer.textContent += 2;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 2;
+  } else {
+    resultContainer.textContent += 2;
+  }
 });
 
 btns[3].addEventListener("click", () => {
-  resultContainer.textContent += 3;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 3;
+  } else {
+    resultContainer.textContent += 3;
+  }
 });
 
 btns[4].addEventListener("click", () => {
-  resultContainer.textContent += 4;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 4;
+  } else {
+    resultContainer.textContent += 4;
+  }
 });
 
 btns[5].addEventListener("click", () => {
-  resultContainer.textContent += 5;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 5;
+  } else {
+    resultContainer.textContent += 5;
+  }
 });
 
 btns[6].addEventListener("click", () => {
-  resultContainer.textContent += 6;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 6;
+  } else {
+    resultContainer.textContent += 6;
+  }
 });
 
 btns[7].addEventListener("click", () => {
-  resultContainer.textContent += 7;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 7;
+  } else {
+    resultContainer.textContent += 7;
+  }
 });
 
 btns[8].addEventListener("click", () => {
-  resultContainer.textContent += 8;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 8;
+  } else {
+    resultContainer.textContent += 8;
+  }
 });
 
 btns[9].addEventListener("click", () => {
-  resultContainer.textContent += 9;
+  if (resultContainer.textContent == 0) {
+    resultContainer.textContent = "";
+    resultContainer.textContent += 9;
+  } else {
+    resultContainer.textContent += 9;
+  }
 });
 
 btns[10].addEventListener("click", () => {
@@ -267,7 +317,7 @@ btns[14].addEventListener("click", () => {
 });
 
 btns[15].addEventListener("click", () => {
-  resultContainer.textContent = "";
+  resultContainer.textContent = 0;
   spanResult.textContent = "";
   valueA = 0;
   valueB = 0;
@@ -277,8 +327,14 @@ btns[15].addEventListener("click", () => {
 });
 
 btns[16].addEventListener("click", () => {
-  let str = resultContainer.textContent.slice(0, -1);
-  resultContainer.textContent = str;
+  if (resultContainer.textContent == "") {
+    resultContainer.textContent = 0;
+  } else if (resultContainer.textContent.length === 1) {
+    resultContainer.textContent = 0;
+  } else {
+    let str = resultContainer.textContent.slice(0, -1);
+    resultContainer.textContent = str;
+  }
 });
 
 btns[17].addEventListener("click", () => {
