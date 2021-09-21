@@ -8,4 +8,233 @@
 
 body {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: auto;
+  border: solid black 2px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10, 10, 10, black;
+  height: auto;
+  display: grid;
+  grid-template: 100px 60px 60px 60px 50px / 60px 60px 60px 50px 70px;
+  grid-template-areas:
+    "result result result result result"
+    "g h i division erase"
+    "d e f multipli clear"
+    "a b c minus equal"
+    "j j virg plus equal";
+}
+
+.number1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: a;
+}
+
+.number2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: b;
+}
+
+.number3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: c;
+}
+
+.number4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: d;
+}
+
+.number5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: e;
+}
+
+.number6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: f;
+}
+
+.number7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: g;
+}
+
+.number8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: h;
+}
+
+.number9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: i;
+}
+
+.number0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: j;
+}
+
+.minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: minus;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: plus;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: division;
+}
+
+.multi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: multipli;
+}
+
+.equal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: equal;
+}
+
+.erase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: erase;
+}
+
+.virg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: virg;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px 2px 10px 2px;
+  background: white;
+  grid-area: result;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 2px;
+  background: rgb(199, 199, 199);
+  grid-area: clear;
 }
