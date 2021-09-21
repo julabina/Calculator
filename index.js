@@ -90,6 +90,10 @@ btns[10].addEventListener("click", () => {
       spanResult.textContent = valueA + "-";
       resultContainer.textContent = "";
       typeMath = 2;
+    } else if (resultContainer.textContent == "") {
+      valueA = 0;
+      spanResult.textContent = valueA + "-";
+      typeMath = 2;
     } else if (valueA > 0) {
       valC = valueA;
       valueA = valC - parseFloat(resultContainer.textContent);
@@ -130,6 +134,10 @@ btns[11].addEventListener("click", () => {
       valueC = 0;
       spanResult.textContent = valueA + "+";
       resultContainer.textContent = "";
+      typeMath = 1;
+    } else if (resultContainer.textContent == "") {
+      valueA = 0;
+      spanResult.textContent = valueA + "+";
       typeMath = 1;
     } else if (valueA > 0) {
       valC = valueA;
@@ -172,6 +180,10 @@ btns[12].addEventListener("click", () => {
       spanResult.textContent = valueA + "/";
       resultContainer.textContent = "";
       typeMath = 3;
+    } else if (resultContainer.textContent == "") {
+      valueA = 0;
+      spanResult.textContent = valueA + "/";
+      typeMath = 3;
     } else if (valueA > 0) {
       valC = valueA;
       valueA = valC / parseFloat(resultContainer.textContent);
@@ -212,6 +224,10 @@ btns[13].addEventListener("click", () => {
       valueC = 0;
       spanResult.textContent = valueA + "x";
       resultContainer.textContent = "";
+      typeMath = 4;
+    } else if (resultContainer.textContent == "") {
+      valueA = 0;
+      spanResult.textContent = valueA + "x";
       typeMath = 4;
     } else if (valueA > 0) {
       valC = valueA;
