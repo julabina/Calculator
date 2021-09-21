@@ -7,9 +7,10 @@ console.log(btns);
 let valueA, valueB, result, typeMath;
 let valueC = 0;
 
+resultContainer.textContent = "0";
+
 const addition = (valA, valB) => {
   result = valA + valB;
-  console.log(result);
 };
 
 const subtraction = (valA, valB) => {
@@ -130,6 +131,7 @@ btns[11].addEventListener("click", () => {
     typeMath = 1;
   } else {
     if (valueC > 0) {
+      console.log(valueC);
       valueA = valueC;
       valueC = 0;
       spanResult.textContent = valueA + "+";
@@ -261,6 +263,7 @@ btns[14].addEventListener("click", () => {
   resultContainer.textContent = result;
 
   valueC = parseFloat(resultContainer.textContent);
+  typeMath = 0;
 });
 
 btns[15].addEventListener("click", () => {
@@ -270,6 +273,7 @@ btns[15].addEventListener("click", () => {
   valueB = 0;
   valueC = 0;
   typeMath = null;
+  result = 0;
 });
 
 btns[16].addEventListener("click", () => {
