@@ -310,7 +310,7 @@ btns[14].addEventListener("click", () => {
   valueA = 0;
   valueB = 0;
   spanResult.textContent = "";
-  resultContainer.textContent = result;
+  resultContainer.textContent = Math.round(result * 100) / 100;
 
   valueC = parseFloat(resultContainer.textContent);
   typeMath = 0;

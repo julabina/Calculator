@@ -237,6 +237,7 @@ main {
   margin: 2px 2px 10px 2px;
   background: white;
   grid-area: result;
+  overflow: hidden;
 }
 
 .result {
