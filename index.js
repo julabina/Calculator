@@ -310,9 +310,8 @@ btns[14].addEventListener("click", () => {
     } else if (typeMath === 4) {
       multiplication(valueA, valueB);
     }
-    console.log("aezaeazeazeaeaeaea");
-    valueA = 0;
-    valueB = 0;
+    valueA = undefined;
+    valueB = undefined;
     spanResult.textContent = "";
     resultContainer.textContent = Math.round(result * 100) / 100;
 
@@ -324,11 +323,11 @@ btns[14].addEventListener("click", () => {
 btns[15].addEventListener("click", () => {
   resultContainer.textContent = 0;
   spanResult.textContent = "";
-  valueA = 0;
-  valueB = 0;
-  valueC = 0;
+  valueA = undefined;
+  valueB = undefined;
+  valueC = undefined;
   typeMath = null;
-  result = 0;
+  result = undefined;
 });
 
 btns[16].addEventListener("click", () => {
