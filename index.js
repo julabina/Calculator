@@ -6,7 +6,7 @@ console.log(btns);
 
 let valueA, valueB, result, typeMath;
 let valueC = 0;
-
+console.log(valueA);
 resultContainer.textContent = "0";
 
 const addition = (valA, valB) => {
@@ -297,23 +297,28 @@ btns[13].addEventListener("click", () => {
 });
 
 btns[14].addEventListener("click", () => {
-  valueB = parseFloat(resultContainer.textContent);
-  if (typeMath === 1) {
-    addition(valueA, valueB);
-  } else if (typeMath === 2) {
-    subtraction(valueA, valueB);
-  } else if (typeMath === 3) {
-    divide(valueA, valueB);
-  } else if (typeMath === 4) {
-    multiplication(valueA, valueB);
-  }
-  valueA = 0;
-  valueB = 0;
-  spanResult.textContent = "";
-  resultContainer.textContent = Math.round(result * 100) / 100;
+  if (valueA == undefined) {
+    result = parseFloat(resultContainer.textContent);
+  } else {
+    valueB = parseFloat(resultContainer.textContent);
+    if (typeMath === 1) {
+      addition(valueA, valueB);
+    } else if (typeMath === 2) {
+      subtraction(valueA, valueB);
+    } else if (typeMath === 3) {
+      divide(valueA, valueB);
+    } else if (typeMath === 4) {
+      multiplication(valueA, valueB);
+    }
+    console.log("aezaeazeazeaeaeaea");
+    valueA = 0;
+    valueB = 0;
+    spanResult.textContent = "";
+    resultContainer.textContent = Math.round(result * 100) / 100;
 
-  valueC = parseFloat(resultContainer.textContent);
-  typeMath = 0;
+    valueC = parseFloat(resultContainer.textContent);
+    typeMath = 0;
+  }
 });
 
 btns[15].addEventListener("click", () => {
