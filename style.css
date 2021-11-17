@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 @font-face {
   font-family: "digit";
-  src: local("./fonts/DS-DIGI.TTF");
+  src: url("./fonts/DS-DIGI.TTF");
 }
 
 *,
@@ -16,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -24,7 +26,6 @@ main {
   border: solid black 2px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 10, 10, 10, black;
   height: auto;
   display: grid;
   grid-template: 100px 60px 60px 60px 50px / 60px 60px 60px 50px 70px;
