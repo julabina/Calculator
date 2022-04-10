@@ -1,0 +1,30 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A simple calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=jsdom",
+    "test:cov": "jest --coverage --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julabina/Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julabina/Calculator/issues"
+  },
+  "homepage": "https://github.com/julabina/Calculator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+  }
+}

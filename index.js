@@ -2,31 +2,31 @@ const resultContainer = document.querySelector(".result");
 const spanResult = document.querySelector(".resultSpan");
 const btns = document.querySelectorAll(".btn");
 
-console.log(btns);
-
 let valueA, valueB, result, typeMath;
 let valueC = 0;
-console.log(valueA);
-resultContainer.textContent = "0";
+
+if(resultContainer) {
+  resultContainer.textContent = "0";
+};
 
 const addition = (valA, valB) => {
-  result = valA + valB;
+  return result = valA + valB;
 };
 
 const subtraction = (valA, valB) => {
-  result = valA - valB;
+  return result = valA - valB;
 };
 
-const multiplication = () => {
-  result = valueA * valueB;
+const multiplication = (valueA, valueB) => {
+  return result = valueA * valueB;
 };
 
-const divide = () => {
-  result = valueA / valueB;
+const divide = (valueA, valueB) => {
+  return result = valueA / valueB;
 };
 
-btns[0].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[0]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 0;
   } else {
@@ -34,8 +34,8 @@ btns[0].addEventListener("click", () => {
   }
 });
 
-btns[1].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[1]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 1;
   } else {
@@ -43,8 +43,8 @@ btns[1].addEventListener("click", () => {
   }
 });
 
-btns[2].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[2]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 2;
   } else {
@@ -52,8 +52,8 @@ btns[2].addEventListener("click", () => {
   }
 });
 
-btns[3].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[3]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 3;
   } else {
@@ -61,8 +61,8 @@ btns[3].addEventListener("click", () => {
   }
 });
 
-btns[4].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[4]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 4;
   } else {
@@ -70,8 +70,8 @@ btns[4].addEventListener("click", () => {
   }
 });
 
-btns[5].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[5]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 5;
   } else {
@@ -79,8 +79,8 @@ btns[5].addEventListener("click", () => {
   }
 });
 
-btns[6].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[6]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 6;
   } else {
@@ -88,8 +88,8 @@ btns[6].addEventListener("click", () => {
   }
 });
 
-btns[7].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[7]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 7;
   } else {
@@ -97,8 +97,8 @@ btns[7].addEventListener("click", () => {
   }
 });
 
-btns[8].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[8]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 8;
   } else {
@@ -106,8 +106,8 @@ btns[8].addEventListener("click", () => {
   }
 });
 
-btns[9].addEventListener("click", () => {
-  if (resultContainer.textContent == 0) {
+btns[9]?.addEventListener("click", () => {
+  if (resultContainer.textContent === 0) {
     resultContainer.textContent = "";
     resultContainer.textContent += 9;
   } else {
@@ -115,7 +115,7 @@ btns[9].addEventListener("click", () => {
   }
 });
 
-btns[10].addEventListener("click", () => {
+btns[10]?.addEventListener("click", () => {
   if (typeMath === 1) {
     val = valueA;
     valueA = val + parseFloat(resultContainer.textContent);
@@ -141,7 +141,7 @@ btns[10].addEventListener("click", () => {
       spanResult.textContent = valueA + "-";
       resultContainer.textContent = "";
       typeMath = 2;
-    } else if (resultContainer.textContent == "") {
+    } else if (resultContainer.textContent === "") {
       valueA = 0;
       spanResult.textContent = valueA + "-";
       typeMath = 2;
@@ -160,7 +160,7 @@ btns[10].addEventListener("click", () => {
   }
 });
 
-btns[11].addEventListener("click", () => {
+btns[11]?.addEventListener("click", () => {
   if (typeMath === 2) {
     val = valueA;
     valueA = val - parseFloat(resultContainer.textContent);
@@ -187,7 +187,7 @@ btns[11].addEventListener("click", () => {
       spanResult.textContent = valueA + "+";
       resultContainer.textContent = "";
       typeMath = 1;
-    } else if (resultContainer.textContent == "") {
+    } else if (resultContainer.textContent === "") {
       valueA = 0;
       spanResult.textContent = valueA + "+";
       typeMath = 1;
@@ -206,7 +206,7 @@ btns[11].addEventListener("click", () => {
   }
 });
 
-btns[12].addEventListener("click", () => {
+btns[12]?.addEventListener("click", () => {
   if (typeMath === 1) {
     val = valueA;
     valueA = val + parseFloat(resultContainer.textContent);
@@ -232,7 +232,7 @@ btns[12].addEventListener("click", () => {
       spanResult.textContent = valueA + "/";
       resultContainer.textContent = "";
       typeMath = 3;
-    } else if (resultContainer.textContent == "") {
+    } else if (resultContainer.textContent === "") {
       valueA = 0;
       spanResult.textContent = valueA + "/";
       typeMath = 3;
@@ -251,7 +251,7 @@ btns[12].addEventListener("click", () => {
   }
 });
 
-btns[13].addEventListener("click", () => {
+btns[13]?.addEventListener("click", () => {
   if (typeMath === 2) {
     val = valueA;
     valueA = val - parseFloat(resultContainer.textContent);
@@ -277,7 +277,7 @@ btns[13].addEventListener("click", () => {
       spanResult.textContent = valueA + "x";
       resultContainer.textContent = "";
       typeMath = 4;
-    } else if (resultContainer.textContent == "") {
+    } else if (resultContainer.textContent === "") {
       valueA = 0;
       spanResult.textContent = valueA + "x";
       typeMath = 4;
@@ -296,8 +296,8 @@ btns[13].addEventListener("click", () => {
   }
 });
 
-btns[14].addEventListener("click", () => {
-  if (valueA == undefined) {
+btns[14]?.addEventListener("click", () => {
+  if (valueA === undefined) {
     result = parseFloat(resultContainer.textContent);
   } else {
     valueB = parseFloat(resultContainer.textContent);
@@ -320,7 +320,7 @@ btns[14].addEventListener("click", () => {
   }
 });
 
-btns[15].addEventListener("click", () => {
+btns[15]?.addEventListener("click", () => {
   resultContainer.textContent = 0;
   spanResult.textContent = "";
   valueA = undefined;
@@ -330,8 +330,8 @@ btns[15].addEventListener("click", () => {
   result = undefined;
 });
 
-btns[16].addEventListener("click", () => {
-  if (resultContainer.textContent == "") {
+btns[16]?.addEventListener("click", () => {
+  if (resultContainer.textContent === "") {
     resultContainer.textContent = 0;
   } else if (resultContainer.textContent.length === 1) {
     resultContainer.textContent = 0;
@@ -341,6 +341,13 @@ btns[16].addEventListener("click", () => {
   }
 });
 
-btns[17].addEventListener("click", () => {
+btns[17]?.addEventListener("click", () => {
   resultContainer.textContent += ".";
 });
+
+export default {
+  addition,
+  subtraction,
+  divide,
+  multiplication
+};
